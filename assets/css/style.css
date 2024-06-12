@@ -10,7 +10,7 @@ THEN the UI scrolls to a section with titled images of the developer's applicati
  <!-- items scale with screen size --> */
 
  * {
-    font-size: 16px;
+    font-size: 20px;
     color: black;
     text-align: center;
     align-content: column;
@@ -20,7 +20,13 @@ THEN the UI scrolls to a section with titled images of the developer's applicati
 header{
     background-color: blue;
     padding: 1%;
+    font-size: 150%;
 }
+footer{
+    background-color: blue;
+    padding: 1%;
+}
+
 
 
 body {
@@ -36,6 +42,37 @@ main {
     flex-direction: column;
     margin-top: 2%;
     }
+
+/* the h's */
+h1 {
+    font-size: 200%;
+    }
+
+
+header h1{
+    text-align: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: silver;
+}
+
+header h2{
+    font-size: 150%;
+    text-align: right;
+    position: relative;
+    left:50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: silver;
+
+}
+
+/* footer h2{
+    position: relative;
+    left:50%;
+} */
     
 /* control the introductory text */
 .intro{
@@ -47,16 +84,17 @@ main {
 .project_big{
     flex: 1 0 50%; 
     /* allow the items to move, but not grow/shrink */
-    height: 400px;
+    /* height: 400px; removed sizing b/c images do the sizing*/
     padding: 10px;
     border-style: solid;
     border-width: 1px;
     border-color: black;
 }
+
 /* standard entries */
 .project{
     flex: 1 1 50%; 
-    height: 200px;
+    /* height: 200px; */
     padding: 10px;
 
     border-style: solid;
@@ -78,12 +116,22 @@ main {
     border-width: 1px;
 }
 
+.project img{
+    padding: 10px;
+    height: 400px;
+}
+
+.project_big img{
+    padding: 10px;
+    height: 800px;
+}
+
+/* this exists solely to make aligning stuff easier */
 .aligned{
     display:flex;
     flex-direction: row;
+    align-items: center;
 }
 
 
- h1 {
-    font-size: 200%;
- }
+
