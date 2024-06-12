@@ -37,6 +37,12 @@ main {
     margin-top: 2%;
     }
     
+/* control the introductory text */
+.intro{
+    text-align: right;
+}
+
+
 /* the spotlight project */
 .project_big{
     flex: 1 0 50%; 
