@@ -1,0 +1,83 @@
+/* <!-- name, phot, contact info, links to sections -->
+<!-- the links work -->
+
+<!-- WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+ -->
+    <!-- clicking on a link moves the screen.  The links work -->
+<!-- the first item should be displayed larger -->
+<!-- images of things are links -->
+ <!-- items scale with screen size --> */
+
+ * {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    align-content: column;
+ }
+
+
+header{
+    background-color: blue;
+    padding: 1%;
+}
+
+
+body {
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    }
+
+main {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    margin-top: 2%;
+    }
+    
+/* the spotlight project */
+.project_big{
+    flex: 1 0 50%; 
+    /* allow the items to move, but not grow/shrink */
+    height: 400px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+/* standard entries */
+.project{
+    flex: 1 1 50%; 
+    height: 200px;
+    padding: 10px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+
+    background-color: blueviolet;
+}
+
+.project header{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+/* i've commited to having project_big, but should have done multiple classes/tags */
+.project_big header{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.aligned{
+    display:flex;
+    flex-direction: row;
+}
+
+
+ h1 {
+    font-size: 200%;
+ }
