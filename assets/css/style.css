@@ -21,6 +21,8 @@ header{
     background-color: lightblue;
     padding: 1%;
     font-size: 150%;
+    display : flex;
+    justify-content: center;
 }
 footer{
     background-color: lightblue;
@@ -69,16 +71,43 @@ header h2{
 
 }
 
-/* footer h2{
-    position: relative;
-    left:50%;
-} */
+header ul{
+    list-style-type : none;
+    /* position : fixed; */
+}
     
-/* control the introductory text */
-.intro{
-    text-align: right;
+header li {
+    display: inline-block;
+    margin-right: 10px;
 }
 
+main .aligned img{
+    height : 500px;
+    width: auto;
+}
+
+/* control the introductory text */
+.intro{
+    text-align: center;
+}
+
+/* puts the 2 objects in the adjacent div beside each other */
+.adjacent{
+    width: 500px;
+    border : 1px solid blue;
+    overflow : hidden;
+}
+
+.leftAdjacent{
+    width: 300px;
+    float:left; /* add this */
+    border: 1px solid red;
+}
+
+.rightAdjacent{
+    border: 1px solid green;
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+}
 
 /* the spotlight project */
 .project_big{
@@ -132,6 +161,5 @@ header h2{
     flex-direction: row;
     align-items: center;
 }
-
 
 
