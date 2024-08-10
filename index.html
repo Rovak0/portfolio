@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<!-- Include photo or avatar -->
+<!-- Fix the sizing so that smaller screens move objects -->
+
+<!-- done -->
+<!-- get the nav bar working -->
+<!-- fix the links to send to finished pages -->
 <html>
   <head>
     <title>Portfolio</title>
@@ -15,6 +21,12 @@
                 I will fix the nav stuff later
             </h2>
         </div>
+        <nav class="aligned">
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#foot">Contact Me</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Navbar -->
@@ -30,11 +42,11 @@
             </p>
         </div>
         <!-- div is required to do sizing -->
-        <div>
+        <div id="projects">
             <section class="project_big"> 
                 <header>Horiseon</header>
                 <!-- make sure the anchor tag gets everything -->
-                <a href="https://github.com/Rovak0/01html-Horiseon-accessibility/blob/main/02-Challenge/Develop/index.html">
+                <a href="https://rovak0.github.io/accessibleWebDesign/">
                     <img src="./assets/horiseon.png" alt="Horison accessibility"></a>    
                 <!-- <img src="./assets/horiseon.png"> -->
                 <p>HTML/CSS</p>
@@ -53,11 +65,13 @@
                 <p>Nothing yet</p>
             </section>
         </div>
+        <!-- put in the 2 projects -->
     </main>
     <!-- Footer -->
-    <footer class="aligned">
+    <footer class="aligned" id="foot">
         <!-- contact info -->
         <h2>Contact information:</h2>
+        <!-- set this up with list stylings -->
         <h2>Phone: 704-555-5555 
             Email: <a href="ericjackwong@outlook.com"> ericjackwong@outlook.com </a>
             <a href="https://github.com/Rovak0"> Github </a>

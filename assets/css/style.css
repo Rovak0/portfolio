@@ -18,12 +18,12 @@ THEN the UI scrolls to a section with titled images of the developer's applicati
 
 
 header{
-    background-color: blue;
+    background-color: lightblue;
     padding: 1%;
     font-size: 150%;
 }
 footer{
-    background-color: blue;
+    background-color: lightblue;
     padding: 1%;
 }
 
